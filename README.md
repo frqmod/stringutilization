@@ -1,6 +1,6 @@
 # stringutilization
 
-basic python script for various string operations, requires angr
+a basic python script for various string operations based around string utilization, requires angr
 
 ```
 usage: stringutil.py [-h] [-o OUTFILE] [-f FUNCTION] [-n NUMCHARS] [-s SEARCHSTRING] [-a ADDRESS] [-i] infile
@@ -22,3 +22,10 @@ optional arguments:
                         Attempts to find a string at a given address
   -i, --ignorenonuser   [EXPERIMENTAL] Attempts to ignore strings only found in library functions
 ```
+
+---
+
+more info:
+
+this script uses angr to pull functions and their disassembly, and then process addresses/offsets to find potential strings locations, which are then checked for validity
+the options are self explanatory, with the only two real notable highlights is the ability to filter based on function/string and the ability to attempt to ignore non-user strings, which is fancy jargon for only displaying strings used in functions that aren't known library functions

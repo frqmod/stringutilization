@@ -2,6 +2,8 @@
 
 a basic python script for various string operations based around string utilization, requires angr
 
+built 99.9% for personal use
+
 ```
 usage: stringutil.py [-h] [-o OUTFILE] [-f FUNCTION] [-n NUMCHARS] [-s SEARCHSTRING] [-a ADDRESS] [-i] infile
 

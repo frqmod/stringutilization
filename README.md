@@ -28,4 +28,5 @@ optional arguments:
 more info:
 
 this script uses angr to pull functions and their disassembly, and then process addresses/offsets to find potential strings locations, which are then checked for validity
+
 the options are self explanatory, with the only two real notable highlights is the ability to filter based on function/string and the ability to attempt to ignore non-user strings, which is fancy jargon for only displaying strings used in functions that aren't known library functions
